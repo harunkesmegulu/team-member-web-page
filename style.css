@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100rem;
+  height: 10rem;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  grid-column: 50rem 50rem;
+}
+header div {
+  width: 100rem;
+  text-orientation: sideways;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+header h1 {
+  padding-top: 4rem;
+  text-align: center;
+}
+header .prg {
+  padding-top: 4rem;
+}
+.container {
+  width: 100rem;
+  height: 80rem;
+  display: grid;
+  grid-template-columns: 28rem 28rem 28rem;
+  grid-template-rows: 32rem 32rem;
+  background-color: #f4f4f4;
+  gap: 1rem 1rem;
+  padding: 0.1rem 8rem 6rem 8rem;
+}
+.duty {
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  font-size: medium;
+}
+.name {
+  font-size: x-large;
+  font-weight: 800;
+}
+.image {
+  width: 24rem;
+  height: 30rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
+  display: grid;
+  grid-template-columns: 24rem 2rem;
+  grid-template-rows: 95% 5%;
+}
+.content2,
+.content5 {
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+}
+
+.container .duty {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  header {
+    display: block;
+    flex-wrap: wrap;
+    width: 50rem;
+    height: 10rem;
+    line-height: 1, 5rem;
+    margin: 1rem 8rem 1rem 8rem;
+  }
+  header div {
+    width: 50rem;
+  }
+  header .prg {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .container {
+    width: 65rem;
+    height: 120rem;
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+    grid-template-rows: 32rem 32rem 32rem;
+    background-color: #f4f4f4;
+    gap: 1rem 1rem;
+    padding: 0.1rem 5rem 3rem 6rem;
+  }
+  .content5 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .content4,
+  .content6 {
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+  }
+  .duty {
+    font-size: small;
+  }
+  .name {
+    font-size: large;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 900px) {
+  header {
+    display: block;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 12rem;
+    line-height: 1, 5rem;
+    margin: 1rem;
+  }
+  header div {
+    width: 40rem;
+  }
+  header .prg {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .container {
+    width: 40rem;
+    height: 210rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 28rem;
+    grid-template-rows: 32rem 32rem 32rem 32rem 32rem 32rem;
+    background-color: #f4f4f4;
+    gap: 1rem 1rem;
+    padding: 0.1rem 5rem 3rem 8rem;
+  }
+  .content2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .content4,
+  .content5,
+  .content6 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .duty {
+    font-size: x-small;
+  }
+  .name {
+    font-size: large;
+    font-weight: 600;
+  }
+}
